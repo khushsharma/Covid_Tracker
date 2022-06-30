@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato' , 'Arial';
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* reusable */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87) , rgba(0, 0, 0, 0.658)) , url(img/bg5.jpg);
+    background-attachment: fixed;
+    background-position-x: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+/*rgb(26, 22, 22) */
+section {
+    padding: 40px 0;
+}
+.section-features {
+    background-image: linear-gradient(rgb(6, 16, 17),rgb(26, 22, 22) );
+}
+.resources {
+    background-image: linear-gradient(rgb(6, 16, 17),rgb(26, 22, 22) );
+    
+}
+.message {
+    background-image: linear-gradient(rgb(26, 22, 22) ,rgb(6, 16, 17));
+}
+.footer {
+   color: #333;
+}
+
+h1,h2 ,h3{
+   
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+       
+}
+h1 
+{   margin: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 3px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px ;
+    
+
+    
+}
+h3 {
+    font-size: 110%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+h2:after { 
+    display: block;
+    height: 2px ; 
+    background-color: rgba(33, 163, 130, 0.459);
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+
+}
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.box {
+    padding: 1%;
+}
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    font-weight: 300;
+    text-align: center;
+    
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%);
+    
+}
+h3:after { 
+    display: block;
+    height: 1px ; 
+    background-color: rgba(33, 163, 130, 0.459);
+    content: "";
+    width: 350px;
+    margin-top: 15px ;
+    
+    
+    
+
+}
+
+/*----------------------- icons ------------------- */
+
+.icon-big  {
+    font-size: 300%;
+    display: block;
+    color: rgb(15, 117, 92);
+    text-align: center;
+
+}
+
+/*----------------------- buttons ----------------- */
+.btn:hover,
+.btn:active {
+    background-color: rgba(13, 90, 71, 0.76);
+
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 200px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none ;
+    transition: background-color 0.4s;
+}
+.btn-full {
+    background-color: rgba(33, 163, 130, 0.459);
+    border: 2px solid rgba(33, 163, 130, 0.034);
+    margin-right: 1%;
+}
+.btn-ghost {
+    border: 2px solid rgba(33, 163, 130, 0.459);
+    
+}
+.btn-full:hover,
+.btn-full:active {
+    border: 2px solid  rgba(33, 163, 130, 0.033);
+  
+
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 2px solid  rgba(33, 163, 130, 0.03);
+    
+
+}
+
+/*----------------over-------------------*/
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+/*.logo {
+    height: 108px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+} */
+.main-nav {
+    float: left;
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px; 
+    
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+   font-size: 90%;
+   font-weight: 300;
+  /*border: 2px solid rgba(33, 163, 130, 0.459);*/
+   border-radius: 200px;
+   padding: 10px 10px;
+   transition: all .5s ease-in-out;
+   
+}
+
+ .main-nav li a:hover,
+.main-nav li a:active
+ {
+    background-color: rgba(33, 163, 130, 0.205);
+    padding: 10px 30px;
+   
+    transition: all .5s ease;
+    
+    border-radius: 200px;
+
+} 
+/*---------------sticky navigation ---------------------*/
+.sticky {
+    box-shadow: 0 2px 2px rgba(6, 16, 17, 0.986);
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(6, 16, 17, 0.986);
+    z-index: 9999;
+
+
+  
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    
+   
+}
+
+
+/*---------------sticky navigation---------------------*/
+
+.resources-link {
+    margin-bottom: 25px;
+    list-style: none;
+    
+}
+/*---------------message faltu ---------------------*/
+blockquote:before {
+    content: open-quote;
+    font-size: 200%;
+    color: rgb(13, 90, 71);
+
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+}
+blockquote::after { 
+    content: close-quote;
+    font-size: 200%;
+    color: rgb(13, 90, 71);
+   
+}
+
+
+  
+
+
+cite {
+    margin-left: 10%;
+}
+
+cite p {
+    font-style: italic;
+    font-size: 90%;
+   
+    display: block;
+    margin-left: 22px;
+    
+    margin-left: 13.5%;
+   
+}
+cite p:after {
+    
+    display: block;
+    height: 1px ; 
+    background-color: rgba(33, 163, 130, 0.459);
+    content: "";
+    width: 110px;
+    margin-top: 10px ;
+
+}
+
+cite img {
+     height: 170px;
+     /*border :1px solid  rgba(16, 77, 61, 0.842); */
+     padding: 2%;
+     
+     border-radius: 50%;
+     margin-right: 10px;
+     padding-top: 5px;
+     vertical-align: middle;
+}
+blockquote {
+    font-weight: 300;
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+
+}
+/*---------------Footer---------------------*/
+.foot{
+    background-color: rgb(29, 29, 29);
+}
+
+
+.social-links {
+    list-style: none;
+     
+    
+    
+}
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+.social-links li:last-child {
+    margin-right: 0px;
+}
+.social-links li a:link , 
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: rgb(173, 171, 171);
+    font-size: 120%;
+    font-weight: 300;
+    
+}
+.social-links li :hover,
+.social-links li :active {
+    color: white;
+
+}
+.yoyo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer p {
+    text-align: center ;
+    font-weight: 300;
+    font-size: 80%;
+    color: rgb(173, 171, 171);;
+}

@@ -1,0 +1,13 @@
+
+
+.table {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(6, 16, 17, 0.938),rgba(26, 22, 22, 0.856)) , url(img/donor.jpg);
+    font-weight: 300;
+    background-attachment: fixed;
+    
+}
+.table th {
+    font-weight: 500; 
+    
+}

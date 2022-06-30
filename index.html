@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang = "en">
+ 
+<head>
+
+    <meta name= "viewport" content="width=device-width , initial-scale=1.0"> 
+
+    <link rel="stylesheet"  type ="text/css" href="Vendors/Css/ionicons.min.css">
+    <link rel="stylesheet"  type ="text/css" href="Resources/css/live.css">
+    <link rel="stylesheet"  type ="text/css" href="Vendors/Css/normalize.css">
+    <link rel="stylesheet"  type ="text/css" href="Vendors/Css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>
+        CovidTracker
+    </title>
+
+</head>
+
+
+<body>
+    
+    <header>
+        <nav>
+            <div class="row">
+               
+
+            <ul class="main-nav">
+                <li >
+                    <a href="#" class="js--yoyo">Live Count </a>
+                </li>
+                <li>
+                    <a href="#" class="js--rs">Resources </a>
+                    
+                </li>
+                <li>
+                    <a href="#">Newsletter </a>
+                </li>
+                <li>
+                    <a href="#" class="js--contact">Contact Us </a>
+                </li>
+
+
+
+
+               </ul>
+             </div>
+          </nav>
+
+            <div class="hero-text-box">
+                <h1>
+                    LETS FIGHT COVID-19... <br> TOGETHER !
+                   
+     
+                </h1>
+                <a class="btn btn-full " href="https://www.cowin.gov.in/home" target="_blank"> Get Vaccinated </a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#"> Show More </a>
+             </div>
+
+
+
+       
+       
+
+
+    </header>
+    
+
+    <section class="section-features js--section-features">
+        <div class = "row">
+            
+           
+            <h2>
+                CovidTracker 
+            </h2>
+            <p class="long-copy">
+                Hello, This is CovidTracker. Check out our website to get the latest COVID-19 news and resources, 
+                as well as tips to protect you and your family from the virus. Stay Safe ! 
+
+            </p>
+        </div>
+            
+        
+        <div class="row">
+            
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-time icon-big"></i>
+                    <h3>Live Count </h3>
+                    <p>
+                        To know the total cases, deaths and recovered, please select the name 
+                        of the country you intend to know about.
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-people icon-big"></i>
+                    <h3>Resources</h3>
+                    <p>
+                        Drill down into our Google spreadsheet for verified and 
+                        trusted data which gets updated every second.
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box ">
+                    <i class="ion-ios-email icon-big"></i>
+                    <h3> Newsletter</h3>
+                    <p>
+                        Become a part of our newsletter community to get email updates on specific news, 
+                        so that you don't get caught up in fake ones.
+                    </p>
+
+                </div>
+
+                
+         </div>
+  </section>
+
+  <section class="js-live">
+    <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">Change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">-</div>
+            <div class="new-value">-</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">-</div>
+            <div class="new-value">-</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">-</div>
+            <div class="new-value">-</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+  </section>
+  
+  
+  <section class="resources js--resources">  
+      <div class = "row">
+            
+           
+            <h2>
+                &mdash; Resources &mdash; 
+            </h2>
+            
+        </div>
+        <div class="row js--wp-2">
+            <div class="col span-1-of-3">
+                <ul class="resources-link">
+                    <li><a href="donor.html" class="btn btn-full" target="_blank">Plasma</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-3">
+                <ul class="resources-link">
+                    <li><a href="" class="btn btn-full" target="_blank">Oxygen</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-3">
+                <ul class="resources-link">
+                    <li><a href="" class="btn btn-full" target="_blank">Hospital Beds</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="row js--wp-3">
+        <div class="col span-1-of-3">
+            <ul class="resources-link">
+                <li><a href="" class="btn btn-full" target="_blank">Medicines</a></li>
+            </ul>
+        </div>
+        <div class="col span-1-of-3">
+            <ul class="resources-link">
+                <li><a href="" class="btn btn-full" target="_blank">Food Resources</a></li>
+            </ul>
+        </div>
+        <div class="col span-1-of-3">
+            <ul class="resources-link">
+                <li><a href="" class="btn btn-full" target="_blank">Home Nurses</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="row js--wp-4">
+    <div class="col span-1-of-3">
+        <ul class="resources-link">
+            <li><a href="" class="btn btn-full" target="_blank">Testing</a></li>
+        </ul>
+    </div>
+    <div class="col span-1-of-3">
+        <ul class="resources-link">
+            <li><a href="" class="btn btn-full" target="_blank">Doctors</a></li>
+        </ul>
+    </div>
+    <div class="col span-1-of-3">
+        <ul class="resources-link">
+            <li><a href="" class="btn btn-full" target="_blank">Mental Health</a></li>
+        </ul>
+    </div>
+    
+</div>
+</section>
+<section class="message">
+    <div class="row"> </div> 
+    <h2>
+        &mdash;   A message from Developer  &mdash;
+    </h2>
+    <div class=" row ">
+        <blockquote> 
+            With the ongoing Covid-19 crisis, most individuals are juggling with mental stress, anxiety, and depression. 
+            Studies demonstrate that a positive attitude can impact both physical and mental health. 
+            To be positive, you have to use each day as a challenge to get away from negative affirmations and help others to stay positive.
+            It might sound weird how to stay positive throughout a situation like this, but not impossible. 
+            
+        </blockquote>
+        <cite> <img src="Resources/img/IMG_1556-removebg.png" alt=""> <p> Khush Sharma</p></cite> 
+
+    </div>
+
+</section>
+
+
+<section class="foot js--foot">
+    <footer>
+        <div class="row">
+            
+            
+            <div class="yoyo">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/khush.sharma.5015"> <i class="ion-social-facebook"></i> </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/narendramodi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <i class="ion-social-twitter"></i> </a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="ion-social-instagram"></i> </a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="ion-social-googleplus"></i> </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2021 by CovidTracker.All rights reserved.
+            </p>
+        
+        </div>
+
+
+    </footer>
+    
+        </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="resources/javascript/script.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="resources/javascript/countries.js"></script>
+    <script src="resources/javascript/app.js"></script>
+
+  
+</body>
+
+</html>
